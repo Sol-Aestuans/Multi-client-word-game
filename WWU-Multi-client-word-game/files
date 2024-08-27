@@ -1,0 +1,14 @@
+.gitignore
+.gitlab-ci.yml
+Makefile
+client.c
+files
+proj.c
+proj.h
+sample_client
+sample_server
+server.c
+trie.c
+trie.h
+twl06.txt
+writeup.txt

@@ -1,0 +1,25 @@
+a. 
+    As far as we can tell, everything in the code logically functions as intended.
+    The autograder seems to have  issues with the client, saying it fails to make a connection, but we are unable to recreate this on the lab machines on campus. 
+    This issue seemed to arise when we implemented our timeout functionality, which is also working fine in our testing. 
+    The only feature that we haven't been able to implement is the disconnection of both clients if either client prematurely disconnects. 
+    This feature works if the active player disconnects but not if the inactive one does.
+
+b. 
+    We are assuming the autograder is not being used to assign our grade, as locally are code works to specification.
+    We also assumed that a client that timed out needed to still recieve game info, the clients time out similarly to the server.
+    This meant that if a client doesn't input a guess within the timeout period, their chance to submit is rescinded.
+    The client is then presented with updated game info (Board, Score, Turn status, etc.)
+
+c. 
+    We ran a variety of edge cases. Firstly, bad input when starting the server/client as well as bad user input when submitting words. 
+    We tested random disconnects and other potential network issues. 
+    Many many games were played during the development process
+
+d. 
+    The most challenging aspect of this assignment was the more robust communication back and forth between the server and client. 
+    Sending a different amount of messages each way depending on certain game states took some time to configure, so that the clients and server were syncronized.
+
+e. 
+    A more reactionary game might be more fun, where players can play concurrently, instead of waiting for the other to complete their turn. 
+    May be very challenging though.
